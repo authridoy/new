@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <section class="main-body">
+        <div>
+            <button onclick="onmenu()" class="menu-icon"><img src="images/menu.png" alt=""></button>
+        </div>
+        <div class="sidevbar" id="sidevbar">
+            <button onclick="closemenu()" class="closemenu-icon"><img src="images/close-icon.png" alt=""></button>
+            <div>
+                <form class="search-form">
+                    <div class="input-group">
+                        <label for="search"><img src="images/search-icon.svg" alt=""></label>
+                        <input id="search" type="text" placeholder="Search">
+                    </div>
+                    <button class="box-btn">New</button>
+                </form>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="#">Your Name</a></li>
+                        <li><a href="#">Your Friend</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="siderbar-bottom">
+                <div class="react-content">
+                    <img src="images/imge.svg" alt="">
+                    <h1>React Router Contacts</h1>
+                </div>
+            </div>
+        </div>
+        <div class="details">
+            <div class="contact">
+                <img src="images/cat.jpg" alt="">
+                <div>
+                    <h1>Your Name<img src="images/star-icon.jpg" alt="star"></h1>
+                    <a href="#">your_handle</a>
+                    <p>Some notes</p>
+                    <div class="contact-btn">
+                        <button class="box-btn">Edit</button>
+                        <button class="box-btn">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <script>
+        function onmenu(){
+            var onnavmenu = document.getElementById('sidevbar');
+            onnavmenu.classList.add('shown');
+        }
+        function closemenu(){
+            var closenavmenu = document.getElementById('sidevbar');
+            closenavmenu.classList.remove('shown');
+        }
+    </script>
+
+
+    
+</body>
+</html>
